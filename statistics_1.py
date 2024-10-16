@@ -44,8 +44,8 @@ def process_csv(folder_name, output_folder):
             writer.writerow([topic_name, total_questions, correct_answers, round(accuracy, 2)])
 
 # 文件夹路径定义
-input_folders = ['BlueLM-7B-Base-5-shot-culture', 'BlueLM-7B-Base-5-shot-non-culture']
-output_folders = ['statistic_BlueLM-7B-Base-5-shot-culture', 'statistic_BlueLM-7B-Base-5-shot-non-culture']
+input_folders = ['BlueLM-7B-Base-0-shot-culture', 'BlueLM-7B-Base-0-shot-non-culture']
+output_folders = ['statistic_BlueLM-7B-Base-0-shot-culture', 'statistic_BlueLM-7B-Base-0-shot-non-culture']
 
 # 遍历输入文件夹并处理
 for input_folder, output_folder in zip(input_folders, output_folders):
